@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Selector</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1, h2 {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        label, input, textarea, select, button {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .form-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .form-link {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-link:hover {
+            background-color: #0056b3;
+        }
+
+        .form-content {
+            display: none;
+            margin-top: 30px;
+        }
+
+        input.form-toggle:checked ~ .form-container .form-content {
+            display: none;
+        }
+
+        /* Toggle checked state display */
+        #form1:checked ~ .form-container .form1,
+        #form2:checked ~ .form-container .form2,
+        #form3:checked ~ .form-container .form3,
+        #form4:checked ~ .form-container .form4,
+        #form5:checked ~ .form-container .form5,
+        #form6:checked ~ .form-container .form6,
+        #form7:checked ~ .form-container .form7,
+        #form8:checked ~ .form-container .form8,
+        #form9:checked ~ .form-container .form9,
+        #form10:checked ~ .form-container .form10 {
+            display: block;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea, select, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Choose a Form</h1>
+        <div class="form-links">
+            <label for="form1" class="form-link">Form 1</label>
+            <label for="form2" class="form-link">Form 2</label>
+            <label for="form3" class="form-link">Form 3</label>
+            <label for="form4" class="form-link">Form 4</label>
+            <label for="form5" class="form-link">Form 5</label>
+            <label for="form6" class="form-link">Form 6</label>
+            <label for="form7" class="form-link">Form 7</label>
+            <label for="form8" class="form-link">Form 8</label>
+            <label for="form9" class="form-link">Form 9</label>
+            <label for="form10" class="form-link">Form 10</label>
+        </div>
+    </div>
+
+    <!-- Hidden radio buttons -->
+    <input type="radio" id="form1" name="form" class="form-toggle">
+    <input type="radio" id="form2" name="form" class="form-toggle">
+    <input type="radio" id="form3" name="form" class="form-toggle">
+    <input type="radio" id="form4" name="form" class="form-toggle">
+    <input type="radio" id="form5" name="form" class="form-toggle">
+    <input type="radio" id="form6" name="form" class="form-toggle">
+    <input type="radio" id="form7" name="form" class="form-toggle">
+    <input type="radio" id="form8" name="form" class="form-toggle">
+    <input type="radio" id="form9" name="form" class="form-toggle">
+    <input type="radio" id="form10" name="form" class="form-toggle">
+
+    <div class="form-container">
+        <!-- Form contents remain same -->
+        <!-- You can keep all the forms as it is from your code -->
+    </div>
+</body>
+</html>

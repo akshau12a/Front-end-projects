@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+.form-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-link {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.form-link:hover {
+    background-color: #2980b9;
+}
+
+/* Form Container */
+.form-container {
+    margin-top: 40px;
+}
+
+.form-toggle {
+    display: none;
+}
+
+.form-content {
+    display: none;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+}
+
+.form1 {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.form2 {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.form3 {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.form4 {
+    background: linear-gradient(to right, #f2c94c, #f2994a);
+}
+
+.form5 {
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+
+.form6 {
+    background: linear-gradient(to right, #ff9a8b, #ff6a88);
+}
+
+.form7 {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.form8 {
+    background: linear-gradient(to right, #f76c6c, #f9a826);
+}
+
+.form9 {
+    background: linear-gradient(to right, #70e1f5, #ffd194);
+}
+
+.form10 {
+    background: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+
+/* Show the form based on the radio button selection */
+input#form1:checked ~ .form-container .form1,
+input#form2:checked ~ .form-container .form2,
+input#form3:checked ~ .form-container .form3,
+input#form4:checked ~ .form-container .form4,
+input#form5:checked ~ .form-container .form5,
+input#form6:checked ~ .form-container .form6,
+input#form7:checked ~ .form-container .form7,
+input#form8:checked ~ .form-container .form8,
+input#form9:checked ~ .form-container .form9,
+input#form10:checked ~ .form-container .form10 {
+    display: block;
+}
+
+/* Form Inputs and Buttons */
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
