@@ -1,45 +1,65 @@
-# 🏃 Nike-Inspired Store Frontend
+# 👟 Nike-Inspired E-Commerce UI
 
-This is a sleek, responsive, and modern single-page web interface inspired by Nike’s branding and layout. It showcases a clean hero section, featured products, and a product carousel to engage users and simulate an e-commerce shopping experience.
+This is a responsive, interactive, and stylish Nike-inspired e-commerce front-end project. It features a product slider, shopping interface, product details with purchase options, a newsletter, and more — all built using only **HTML**, **CSS**, and **JavaScript**.
 
-## 🔍 Features
 
-- ⚡ **Responsive Design** using Bootstrap 5  
-- 🎯 **Hero Section** with promotional message and CTA  
-- 👟 **Featured Products** section for popular items  
-- 🎠 **Interactive Product Carousel**  
-- 🎨 Clean and modern UI styled with custom CSS  
+---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
-nike.html
-/images/
-  ├── nike-banner.jpg
-  ├── shopping.webp
-  ├── shopping (22).webp
-  ├── shopping (33).webp
-  ├── shopping (c1).webp
-  ├── shopping (c2).webp
-  └── shopping (c3).webp
+.
+├── index.html       # Main HTML file
+├── styles.css       # All styles and responsiveness
+├── app.js           # Slider and payment modal logic
+├── README.md
+└── /images/         # Assets folder (logos, shoes, icons, banners, etc.)
 ```
 
-## 🛠️ Technologies Used
+---
 
-- **HTML5**
-- **CSS3**
-- **Bootstrap 5**
+## 💡 Features
+
+- 🎯 Full-screen product **slider** with animation  
+- 💳 Functional **Buy Now** button triggering a **payment form** modal  
+- 📱 Fully **responsive** for mobile and desktop  
+- 🛍️ Interactive **product selection** with sizes, colors  
+- 📬 Newsletter and social media integration  
+- 🎨 Designed using Google Fonts and custom CSS
+
+---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/nike-store-clone.git
-   ```
-2. Open `nike.html` in your browser.
+### 1. Clone the repository:
+```bash
+git clone https://github.com/akshau12a/nike-ecommerce-clone.git
+cd nike-ecommerce-clone
+```
 
-> ⚠️ Make sure the `images/` folder is in the same directory as `nike.html` for the images to load correctly.
+### 2. Run Locally:
+Just open `index.html` in your browser. No build step needed.
 
-## 📄 License
+---
 
-This project is for educational/demo purposes only. Not affiliated with Nike.
+## 🛠️ Built With
+
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript (ES6)**
+- **Google Fonts**
+
+---
+
+
+## 🙏 Credits
+
+- Design inspiration from Nike official site
+- Developed by [Akshay](https://github.com/akshau12a)
+
+---
+
+## ⚠️ Disclaimer
+
+This is a personal project for educational/demo purposes. Not affiliated with Nike.
+
