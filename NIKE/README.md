@@ -34,7 +34,7 @@ nike.html
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/nike-store-clone.git
+   git clone https://github.com/akshau12a/nike-store-clone.git
    ```
 2. Open `nike.html` in your browser.
 
